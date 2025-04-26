@@ -43,6 +43,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Answer = new System.Windows.Forms.Label();
             this.button_Exit = new System.Windows.Forms.Button();
+            this.TBox31 = new System.Windows.Forms.TextBox();
+            this.TBox21 = new System.Windows.Forms.TextBox();
+            this.TBox11 = new System.Windows.Forms.TextBox();
+            this.TBox33 = new System.Windows.Forms.TextBox();
+            this.TBox23 = new System.Windows.Forms.TextBox();
+            this.TBox13 = new System.Windows.Forms.TextBox();
+            this.TBox32 = new System.Windows.Forms.TextBox();
+            this.TBox22 = new System.Windows.Forms.TextBox();
+            this.TBox12 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Error_tr = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -177,11 +189,125 @@
             this.button_Exit.UseVisualStyleBackColor = true;
             this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
+            // TBox31
+            // 
+            this.TBox31.Enabled = false;
+            this.TBox31.Location = new System.Drawing.Point(445, 200);
+            this.TBox31.Name = "TBox31";
+            this.TBox31.Size = new System.Drawing.Size(60, 22);
+            this.TBox31.TabIndex = 23;
+            // 
+            // TBox21
+            // 
+            this.TBox21.Enabled = false;
+            this.TBox21.Location = new System.Drawing.Point(445, 150);
+            this.TBox21.Name = "TBox21";
+            this.TBox21.Size = new System.Drawing.Size(60, 22);
+            this.TBox21.TabIndex = 22;
+            // 
+            // TBox11
+            // 
+            this.TBox11.Enabled = false;
+            this.TBox11.Location = new System.Drawing.Point(445, 100);
+            this.TBox11.Name = "TBox11";
+            this.TBox11.Size = new System.Drawing.Size(60, 22);
+            this.TBox11.TabIndex = 21;
+            // 
+            // TBox33
+            // 
+            this.TBox33.Enabled = false;
+            this.TBox33.Location = new System.Drawing.Point(645, 200);
+            this.TBox33.Name = "TBox33";
+            this.TBox33.Size = new System.Drawing.Size(60, 22);
+            this.TBox33.TabIndex = 20;
+            // 
+            // TBox23
+            // 
+            this.TBox23.Enabled = false;
+            this.TBox23.Location = new System.Drawing.Point(645, 150);
+            this.TBox23.Name = "TBox23";
+            this.TBox23.Size = new System.Drawing.Size(60, 22);
+            this.TBox23.TabIndex = 19;
+            // 
+            // TBox13
+            // 
+            this.TBox13.Enabled = false;
+            this.TBox13.Location = new System.Drawing.Point(645, 100);
+            this.TBox13.Name = "TBox13";
+            this.TBox13.Size = new System.Drawing.Size(60, 22);
+            this.TBox13.TabIndex = 18;
+            // 
+            // TBox32
+            // 
+            this.TBox32.Enabled = false;
+            this.TBox32.Location = new System.Drawing.Point(545, 200);
+            this.TBox32.Name = "TBox32";
+            this.TBox32.Size = new System.Drawing.Size(60, 22);
+            this.TBox32.TabIndex = 17;
+            // 
+            // TBox22
+            // 
+            this.TBox22.Enabled = false;
+            this.TBox22.Location = new System.Drawing.Point(545, 150);
+            this.TBox22.Name = "TBox22";
+            this.TBox22.Size = new System.Drawing.Size(60, 22);
+            this.TBox22.TabIndex = 16;
+            // 
+            // TBox12
+            // 
+            this.TBox12.Enabled = false;
+            this.TBox12.Location = new System.Drawing.Point(545, 100);
+            this.TBox12.Name = "TBox12";
+            this.TBox12.Size = new System.Drawing.Size(60, 22);
+            this.TBox12.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(440, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(293, 26);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Транспонированная матрица";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(468, 279);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(221, 51);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Транспонировать исходную матрицу";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Error_tr
+            // 
+            this.Error_tr.AutoSize = true;
+            this.Error_tr.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Error_tr.ForeColor = System.Drawing.Color.Red;
+            this.Error_tr.Location = new System.Drawing.Point(421, 340);
+            this.Error_tr.Name = "Error_tr";
+            this.Error_tr.Size = new System.Drawing.Size(0, 26);
+            this.Error_tr.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Error_tr);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.TBox31);
+            this.Controls.Add(this.TBox21);
+            this.Controls.Add(this.TBox11);
+            this.Controls.Add(this.TBox33);
+            this.Controls.Add(this.TBox23);
+            this.Controls.Add(this.TBox13);
+            this.Controls.Add(this.TBox32);
+            this.Controls.Add(this.TBox22);
+            this.Controls.Add(this.TBox12);
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.Answer);
             this.Controls.Add(this.label2);
@@ -221,5 +347,17 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Answer;
         private System.Windows.Forms.Button button_Exit;
+        private System.Windows.Forms.TextBox TBox31;
+        private System.Windows.Forms.TextBox TBox21;
+        private System.Windows.Forms.TextBox TBox11;
+        private System.Windows.Forms.TextBox TBox33;
+        private System.Windows.Forms.TextBox TBox23;
+        private System.Windows.Forms.TextBox TBox13;
+        private System.Windows.Forms.TextBox TBox32;
+        private System.Windows.Forms.TextBox TBox22;
+        private System.Windows.Forms.TextBox TBox12;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label Error_tr;
     }
 }

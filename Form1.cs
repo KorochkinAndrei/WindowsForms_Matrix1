@@ -206,5 +206,25 @@ namespace WindowsForms_Matrix1
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Error_enter11 != true && Error_enter12 != true && Error_enter13 != true &&
+                    Error_enter21 != true && Error_enter22 != true && Error_enter23 != true &&
+                    Error_enter31 != true && Error_enter32 != true && Error_enter33 != true)
+            {
+                TBox11.Text = a11.ToString();
+                TBox12.Text = a21.ToString();
+                TBox13.Text = a31.ToString();
+                TBox21.Text = a12.ToString();
+                TBox22.Text = a22.ToString();
+                TBox23.Text = a32.ToString();
+                TBox31.Text = a13.ToString();
+                TBox32.Text = a23.ToString();
+                TBox33.Text = a33.ToString();
+            }
+            else { Error_tr.Text = "Исходная матрица некорректна"; }
+            
+        }
     }
 }
