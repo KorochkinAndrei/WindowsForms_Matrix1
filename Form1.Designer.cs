@@ -42,6 +42,7 @@
             this.erorr_Mes = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Answer = new System.Windows.Forms.Label();
+            this.button_Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -165,11 +166,23 @@
             this.Answer.Size = new System.Drawing.Size(0, 22);
             this.Answer.TabIndex = 13;
             // 
+            // button_Exit
+            // 
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_Exit.Location = new System.Drawing.Point(699, 409);
+            this.button_Exit.Name = "button_Exit";
+            this.button_Exit.Size = new System.Drawing.Size(75, 29);
+            this.button_Exit.TabIndex = 14;
+            this.button_Exit.Text = "Выход";
+            this.button_Exit.UseVisualStyleBackColor = true;
+            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.Answer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.erorr_Mes);
@@ -207,5 +220,6 @@
         private System.Windows.Forms.Label erorr_Mes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Answer;
+        private System.Windows.Forms.Button button_Exit;
     }
 }

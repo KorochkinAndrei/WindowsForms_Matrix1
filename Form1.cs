@@ -201,5 +201,10 @@ namespace WindowsForms_Matrix1
                 catch { erorr_Mes.Text = "Вводите числа"; Error_enter33 = true; }
             }
         }
+
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
